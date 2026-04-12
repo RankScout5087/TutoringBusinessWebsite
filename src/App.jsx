@@ -4,7 +4,6 @@ import { motion, useSpring, useScroll } from "motion/react"
 import PageLinks from "./PageLinks"
 import ScrollReveal from "./ScrollReveal"
 import { useEffect } from 'react';
-import Typewriter from "typewriter-effect"
 
 function App() {
   const MotionLink = motion.create(Link);
@@ -29,7 +28,7 @@ function App() {
           <motion.h2
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
+  transition={{ duration: 0.6 }} className="emphasis"
 >
   Better Grades Over the Summer.
 </motion.h2>

@@ -12,9 +12,9 @@ export default function AppRoutes() {
 
         <nav className="nav-links">
             
-            <Link to="/" className="btn-small">Home</Link>
-            <Link to="/services" className="btn-small">Services</Link>
-            <Link to="/form" className="btn-small">
+            <Link to="/" className="btn-link">Home</Link>
+            <Link to="/services" className="btn-link">Services</Link>
+            <Link to="/form" className="btn-link">
                 Get Started
             </Link>
             </nav>

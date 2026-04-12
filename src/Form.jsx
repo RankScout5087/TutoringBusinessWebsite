@@ -39,8 +39,8 @@ function Form() {
     <div className="page">
       <PageLinks/>
 
-      <section className="hero small-hero">
-        <motion.h2
+      <section className="hero small-hero ">
+        <motion.h2 className="emphasis"
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6 }}
