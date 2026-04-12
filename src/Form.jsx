@@ -24,10 +24,7 @@ function Form() {
     }
     alert("Form submitted!")
   
-    emailjs
-      .sendForm('service_1292g64', 'template_j0nvbcc', form.current, {
-        publicKey: 'apy7g63T2l57ISLh1',
-      })
+    emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID,import.meta.env.VITE_EMAILJS_TEMPLATE_ID,form.current,import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
       .then(
         () => {
           console.log('SUCCESS!');
