@@ -27,7 +27,7 @@ function Tutors() {
         <p>All our people and what they specialize in. Images in progress</p>
       </section>
 
-      <ScrollReveal>
+
       <div className="tutor-backplate">
         <h3 className="tutor-title">Our Tutors</h3>
         <ScrollCards>
@@ -113,7 +113,7 @@ function Tutors() {
             </div>
         </ScrollCards>
       </div>
-      </ScrollReveal>
+
       <section className="cta">
         <h2>Book A Session with our Top-Notch Tutors</h2>
         <p>We’ll be sure to teach you.</p>
