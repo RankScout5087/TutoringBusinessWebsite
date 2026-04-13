@@ -255,6 +255,7 @@ html, body {
 
 /* FORM CARD */
 .form-card {
+  color:var(--background);
   background:var(--dark);
   padding: 30px;
   border-radius: 12px;
