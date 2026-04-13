@@ -284,3 +284,62 @@ form input, form textarea {
   font-family: Inter, system-ui, sans-serif;
 }
 
+/* Tutor stuff*/
+.tutor-backplate {
+  background:var(--dark);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+.tutor-title{
+  text-align: left;
+}
+.tutor-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  background: linear-gradient(145deg, #0a4f8a, #083a66);
+  padding: 24px;
+  border-radius: 18px;
+  margin: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+.tutor-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.tutor-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 3px solid rgba(255,255,255,0.3);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+.tutor-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: white;
+}
+.tutor-name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tutor-role {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.tutor-bio {
+  font-size: 14px;
+  opacity: 0.9;
+  line-height: 1.5;
+  max-width: 600px;
+}
