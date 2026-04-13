@@ -74,9 +74,10 @@ function App() {
           <h3>How It Works</h3>
 
           <div className="steps">
-            <div>1. Choose a tutor</div>
-            <div>2. Book a time</div>
-            <div>3. Start learning</div>
+            <div>1. Book a Time</div>
+            <div>2. Fill Out a Form</div>
+            <div>3. Get an Email From Us and Pay</div>
+            <div>4. Start Learning.</div>
           </div>
         </section>
       </ScrollReveal>

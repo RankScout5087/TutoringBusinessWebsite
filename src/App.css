@@ -34,10 +34,11 @@ html, body {
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   align-self: left;
   color: #fffdf7;;
+  font-family: Montserrat, sans-serif;
 }
 
 
@@ -203,6 +204,7 @@ html, body {
 .card {
   background: var(--secondary);
   padding: 20px;
+  margin: 20px;
   border-radius: 12px;
 }
 
