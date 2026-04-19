@@ -55,15 +55,31 @@ function Form() {
         <div className="form-card">
           <h3>Student Intake Form</h3>
           <p className="muted">
-            This helps us match the right tutor and prepare the session.
+            This helps us match the right tutor and prepare the session. You must book a study room below.
           </p>
+          <h5>THE ONLY TIMES WE COME ARE 12-5 PM ON WEEKDAYS</h5>
+          <iframe
+              src="https://cityofallen.libcal.com/spaces"
+              title="Allen Public Library Study Rooms"
+              style={{
+                width: "95%",
+                height: "500px",
+                border: "none",
+                display: "block",
+                margin: "0 auto",
+                padding: "20px",
+              }}
+            />
+
 
           <form ref = {form}id="tutorForm" onSubmit={sendEmail}>
             <input type="text" name = "name" placeholder="FULL Student Name" required/>
             <input type="text" name = "grade" placeholder="Grade Level" required/>
-            <input type="text" name = "subject" placeholder="Subject Needed" required/>
+            <input type="text" name = "subject" placeholder="Subject Needed (Math, Science, Coding)" required/>
             <textarea name = "known" placeholder="What does the student already know?"></textarea>
             <input type="email" name = "parent_email" placeholder="Parent Email" required/>
+            <input type="text" name = "room" placeholder="What Study Room did you book?" required/>
+            <input type="text" name="time" placeholder="From what times did you book?" required/>
             <input
               type="text"
               name="company"
