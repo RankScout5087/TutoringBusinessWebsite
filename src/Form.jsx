@@ -96,7 +96,7 @@ function Form() {
 
           <p>We’ll reach out within 1 business day.</p>
      
-          <MotionLink whileHover={{ scale: 1.1 , transition: { duration: 0.1 }}}to="/form"   className="btn-primary">
+          <MotionLink whileHover={{ scale: 1.1 , transition: { duration: 0.1 }}}to="/"   className="btn-primary">
             Back to Home
           </MotionLink>
         </div>
