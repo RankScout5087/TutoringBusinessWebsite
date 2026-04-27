@@ -14,7 +14,7 @@ export default function AppRoutes() {
             
             <Link to="/" className="btn-link">Home</Link>
             <Link to="/services" className="btn-link">Services</Link>
-            <Link to="/form" className="btn-link">
+            <Link to="/booking" className="btn-link">
                 Get Started
             </Link>
             <Link to="/tutors" className = "btn-link">Our Tutors</Link>

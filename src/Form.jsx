@@ -4,12 +4,21 @@ import { motion } from "motion/react"
 import PageLinks from "./PageLinks"
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Booking from "./Booking"
+import { useLocation } from "react-router-dom";
 
 function Form() {
+  const location = useLocation();
+  const { room, time } = location.state || {};
   const MotionLink = motion.create(Link)
   const form = useRef();
+  const lastSentRef = useRef(0);
   const sendEmail = (e) => {
     e.preventDefault();
+    const submittedAt = new Date().toISOString();
+
+    const formData = new FormData(form.current);
+    formData.append("submitted_at", submittedAt);
     const honeypot = form.current.company.value;
     if (Date.now() - lastSentRef.current < 10000) {
       console.log("You should slow down dang");
@@ -34,7 +43,6 @@ function Form() {
         },
       );
   };
-  const lastSentRef = useRef(0);
   return (
     <div className="page">
       <PageLinks/>
@@ -58,19 +66,7 @@ function Form() {
             This helps us match the right tutor and prepare the session. You must book a study room below.
           </p>
           <h5>THE ONLY TIMES WE COME ARE 12-5 PM ON WEEKDAYS</h5>
-          <iframe
-              src="https://cityofallen.libcal.com/spaces"
-              title="Allen Public Library Study Rooms"
-              style={{
-                width: "95%",
-                height: "500px",
-                border: "none",
-                display: "block",
-                margin: "0 auto",
-                padding: "20px",
-              }}
-            />
-
+          
 
           <form ref = {form}id="tutorForm" onSubmit={sendEmail}>
             <input type="text" name = "name" placeholder="FULL Student Name" required/>
@@ -78,8 +74,8 @@ function Form() {
             <input type="text" name = "subject" placeholder="Subject Needed (Math, Science, Coding)" required/>
             <textarea name = "known" placeholder="What does the student already know?"></textarea>
             <input type="email" name = "parent_email" placeholder="Parent Email" required/>
-            <input type="text" name = "room" placeholder="What Study Room did you book?" required/>
-            <input type="text" name="time" placeholder="From what times did you book?" required/>
+            <input type="hidden" name="room" value={room || ""} />
+            <input type="hidden" name="time" value={time || ""} />
             <input
               type="text"
               name="company"

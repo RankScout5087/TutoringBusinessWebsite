@@ -4,6 +4,7 @@ import Form from "./Form";
 import Services from "./Services";
 import ScrollToTop from "./ScrollToTop";
 import Tutors from "./Tutors";
+import Booking from "./Booking";
 export default function AppRoutes() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function AppRoutes() {
       <Route path="/form" element={<Form />} />
       <Route path="/services" element={<Services />} />
       <Route path="/tutors" element={<Tutors />}/>
+      <Route path="/booking" element={<Booking/>}/>
     </Routes>
     </>
   );

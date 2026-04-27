@@ -46,32 +46,6 @@ function Tutors() {
         </ScrollCards>
         <ScrollCards>
             <div className="tutor-card">
-                <img src={doyoon} className="tutor-img" />
-
-                <div className="tutor-info">
-                    <h3 className="tutor-name">Doyoon</h3>
-                    <p className="tutor-role">Math & Science Tutor</p>
-                    <p className="tutor-bio">
-                    Hello. I'm a student at Ereckson Middle School. I participated in TMSCA General Math and Science in competitions such as the Azle High School TMSCA Meet. At the TMSCA state competition, I ranked 34th out of all students in Texas in science. I play violin and ranked (rank later) at the Chamber Festival competition. I tutor math and science.
-                    </p>
-                </div>
-            </div>
-        </ScrollCards>
-        <ScrollCards>
-            <div className="tutor-card">
-                <img src={Ishaan} className="tutor-img" />
-
-                <div className="tutor-info">
-                    <h3 className="tutor-name">Ishaan</h3>
-                    <p className="tutor-role">Math, Science, and Computer Science Tutor</p>
-                    <p className="tutor-bio">
-                    Hey, I'm a student at Ereckson Middle School with a strong focus on STEM. I'm involved in religious community through BSA and Plano PREC STUCO. Member of NJHS, Turing Club, Texas Math and Science Coaches Association (TMSCA - Calculator, Science, and General Math divisions). I've competed in State level competitions for 2 years and placed 18th in calculator in the state of Texas as an 8th grader. Some previous clubs I was in include Creative Writing Club, Art Club, and Debate Club. I have experience in Python and data science and contributed coding skills to a BEST Robotics team. I'm fluent in English and possesses basic understanding of Spanish.
-                    </p>
-                </div>
-            </div>
-        </ScrollCards>
-        <ScrollCards>
-            <div className="tutor-card">
                 <img src={Zoe} className="tutor-img" />
 
                 <div className="tutor-info">
@@ -84,6 +58,21 @@ function Tutors() {
                 </div>
             </div>
         </ScrollCards>
+        <ScrollCards>
+            <div className="tutor-card">
+                <img src={doyoon} className="tutor-img" />
+
+                <div className="tutor-info">
+                    <h3 className="tutor-name">Doyoon</h3>
+                    <p className="tutor-role">Math & Science Tutor</p>
+                    <p className="tutor-bio">
+                    Hello. I'm a student at Ereckson Middle School. I participated in TMSCA General Math and Science in competitions such as the Azle High School TMSCA Meet. At the TMSCA state competition, I ranked 34th out of all students in Texas in science. I play violin and ranked (rank later) at the Chamber Festival competition. I tutor math and science.
+                    </p>
+                </div>
+            </div>
+        </ScrollCards>
+        
+        
         
         <ScrollCards>
             <div className="tutor-card">
@@ -101,14 +90,13 @@ function Tutors() {
         </ScrollCards>
         <ScrollCards>
             <div className="tutor-card">
-                <img src={Jeffrey} className="tutor-img" />
+                <img src={Ishaan} className="tutor-img" />
 
                 <div className="tutor-info">
-                    <h3 className="tutor-name">Jeffrey</h3>
-                    <p className="tutor-role">(Does not want to show face online)</p>
-                    <p className="tutor-role">Math and Computer Science Tutor</p>
+                    <h3 className="tutor-name">Ishaan</h3>
+                    <p className="tutor-role">Math, Science, and Computer Science Tutor</p>
                     <p className="tutor-bio">
-                    Student at Ereckson Middle School skilled in math and computer science. Got top scores in math competitions through TMSCA events, including meets hosted by Azle High School and the state competition, getting 31th in Number Sense, 33rd in Calculator, and 45th in General Math. Has experience in Python and JavaScript, creating tools to practice and bolster Number Sense skills and hexagonal tic-tac-toe, performing (rank later) in a AWAAI Hackathon.
+                    Hey, I'm a student at Ereckson Middle School with a strong focus on STEM. I'm involved in religious community through BSA and Plano PREC STUCO. Member of NJHS, Turing Club, Texas Math and Science Coaches Association (TMSCA - Calculator, Science, and General Math divisions). I've competed in State level competitions for 2 years and placed 18th in calculator in the state of Texas as an 8th grader. Some previous clubs I was in include Creative Writing Club, Art Club, and Debate Club. I have experience in Python and data science and contributed coding skills to a BEST Robotics team. I'm fluent in English and possesses basic understanding of Spanish.
                     </p>
                 </div>
             </div>
