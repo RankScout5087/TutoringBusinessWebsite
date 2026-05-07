@@ -28,14 +28,14 @@ function App() {
           <motion.h2
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }} className="emphasis"
+  transition={{ duration: 0.6 }} className="logo"
 >
-  Better Grades Over the Summer.
+  Star Student Tutoring
 </motion.h2>
           <p>
             1-on-1 tutoring for K–7 students in Math, Science, and Coding.
           </p>
-          <p>Taught by local students who understand.</p>
+          <p>Better Grades Over this Summer.</p>
 
           <MotionLink whileHover={{ scale: 1.1 , transition: { duration: 0.1 }}}  to="/form" className="btn-primary">
             Book a Session

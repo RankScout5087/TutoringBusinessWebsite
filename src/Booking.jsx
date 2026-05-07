@@ -27,6 +27,13 @@ function Booking() {
 </motion.h2>
         
         <p>Tell us about the student so we can personalize the session.</p>
+        <b><motion.h1 className="emphasis"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          First Session is Free!
+        </motion.h1></b>
       </section>
 
       <section className="section">
@@ -65,7 +72,7 @@ function Booking() {
               }}
             />
             
-            <MotionLink whileHover={{ scale: 1.1 , transition: { duration: 0.1 }}} to="/form"z state={{ room, time }} className = "btn-primary">Next Step</MotionLink>
+            <MotionLink whileHover={{ scale: 1.1 , transition: { duration: 0.1 }}} to="/form" state={{ room, time }} className = "btn-primary">Next Step</MotionLink>
           </form>
 
           <p>We’ll reach out within 1 business day.</p>
