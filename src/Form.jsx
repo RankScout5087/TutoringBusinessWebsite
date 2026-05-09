@@ -75,7 +75,7 @@ function Form() {
             <textarea name = "known" placeholder="How far along is your student and what do they need?"></textarea>
             <textarea name = "fun" placeholder="What are some personal interests of your student?"></textarea>
             <input type="email" name = "parent_email" placeholder="Parent Email" required/>
-            <input type="tel" name = "parent_email" placeholder="Parent Number(123-456-7890)" required/>
+            <input type="tel" name = "parent_number" placeholder="Parent Number(123-456-7890)" required/>
             <input type="text" name= "extra" placeholder="Is there else anything we should know? (Allergies, conditions, times, schedules, etc)"/>
             <input type="hidden" name="room" value={room || ""} />
             <input type="hidden" name="time" value={time || ""} />
