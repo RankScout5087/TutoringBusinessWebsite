@@ -98,7 +98,7 @@ function Form() {
         </div>
       </section>
       
-      <footer className="footer">© 2026 Allen Tutoring</footer>
+      <footer className="footer">© 2026 Inspiration Initiative</footer>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 :root{
-  --text: #fffdf7;
+    --text: #fffdf7;
   --background: #171717;
   --primary: #8cc1e9;
   --dark: #12284b;
@@ -24,6 +24,7 @@ html, body {
 }
 .emphasis{
   font-family: 'Times New Roman', Times, serif;
+  color: var(--text)
 }
 /* NAV */
 .nav {
@@ -45,7 +46,7 @@ html, body {
 
   padding: 12px;
 
-  background: var(--background);
+  background: var(--primary);
   color: var(--text);
 
   border-radius: 16px;
@@ -63,10 +64,16 @@ html, body {
   font-size: 30px;
   font-weight: 700;
   align-self: left;
-  color: #fffdf7;;
+  color: var(--text);
   font-family: Montserrat, sans-serif;
 }
-
+.main_logo {
+  font-size: 30px;
+  font-weight: 700;
+  align-self: left;
+  color: #fffdf7;
+  font-family: Montserrat, sans-serif;
+}
 
 .nav-links a {
   margin-left: 20px;
@@ -198,7 +205,7 @@ html, body {
 
 .section.alt {
   background: var(--dark);
-  color:var(--text);
+  color: #fffdf7;;
 }
 @media (prefers-color-scheme: light) {
   .section.alt {
@@ -222,7 +229,7 @@ html, body {
     color:  var(--background)!important;
 }}
 .header {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -233,7 +240,7 @@ html, body {
 
 .header.stuck {
   opacity: 0.95;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+
 }
 
 @media (max-width: 768px) {
@@ -243,32 +250,13 @@ html, body {
     text-align: center;
 
   }
-
-.menu-button {
-  width: 44px;
-  height: 44px;
-
-  border-radius: 12px;
-
-  border: none;
-  background: var(--dark);
-  color: var(--text);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  cursor: pointer;
-
-  z-index: 2000;
-  position: relative;
-
-  transition: 0.2s ease;
+.lucide {
+  color: var(--background);
+  stroke-width: 2px;
 }
 
-.menu-button:hover {
-  transform: scale(1.05);
-}
+
+
 
 
 
@@ -312,6 +300,11 @@ html, body {
 
   transition: 0.2s ease;
 }
+@media (prefers-color-scheme: light){
+  .menu-button{
+    color: var(--background);
+  }
+}
 
 .menu-button:hover {
   transform: scale(1.05);
@@ -321,9 +314,10 @@ html, body {
 .card {
   background: var(--secondary);
   padding: 20px;
-  margin: 20px;
+  margin: 0px;
   border-radius: 12px;
   color:#fffdf7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -333,6 +327,7 @@ html, body {
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
+  color: #fffdf7;
 }
 @media (max-width: 768px) {
   .steps {

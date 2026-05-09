@@ -32,7 +32,7 @@ function Services() {
 
           <div className="card">
             <h3>Science</h3>
-            <p>At Allen Tutoring, we explore the scientific arts ranging from physics, to biology, to chemistry, and more! Our curriculum focuses on concept clarity over memorization to expand comphrension and memory retainment. Through utilizing the best study methods availble, we believe that we can educate students about our world.</p>
+            <p>At Inspiration Initiative, we explore the scientific arts ranging from physics, to biology, to chemistry, and more! Our curriculum focuses on concept clarity over memorization to expand comphrension and memory retainment. Through utilizing the best study methods availble, we believe that we can educate students about our world.</p>
           </div>
 
           <div className="card">
@@ -88,7 +88,7 @@ function Services() {
         </MotionLink>
       </section>
 
-      <footer className="footer">© 2026 Allen Tutoring</footer>
+      <footer className="footer">© 2026 Inspiration Initiative</footer>
     </div>
   );
 }

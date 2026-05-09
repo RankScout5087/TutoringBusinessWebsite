@@ -22,7 +22,7 @@ export default function PageLinks() {
       <div className="card">
         <header className="nav">
           
-          <h1 className="logo">Star Student Schooling</h1>
+          <h1 className="main_logo">Inspiration Initiative</h1>
 
           <button
             className="menu-button"

@@ -66,7 +66,8 @@ function Tutors() {
                     <h3 className="tutor-name">Doyoon</h3>
                     <p className="tutor-role">Math & Science Tutor</p>
                     <p className="tutor-bio">
-                    Hello. I'm a student at Ereckson Middle School. I participated in TMSCA General Math and Science in competitions such as the Azle High School TMSCA Meet. At the TMSCA state competition, I ranked 34th out of all students in Texas in science. I play violin and ranked (rank later) at the Chamber Festival competition. I tutor math and science.
+                    Hello, my name is Doyoon Yeom. I'm a rising first (technically 1.5) generation immigrant Korean-American (I can speak Korean) freshman set to attend Lowery Freshman Center. I participated in TMSCA General Math and Science in competitions across the North Texas area. At the TMSCA state competition, I ranked 34th out of all students in Texas in science. I was a member of my local Ereckson Robotics team and helped write the Engineering Notebook. I participated in AMC 8 and am looking forward to competing in the AMC 10. I helped organize community service initiatives in Allen through being Student Council Treasurer and personally helped volunteer with ACO. I'm a member of my local NJHS chapter. I also play the Violin and Piano and used to run a video channel (and planning one again this year). I believe that fostering growth means connecting with students where they're at, whether that be through common interests or funny analogies. I believe that any student, no matter their academic level, can prosper with commitment. 
+
                     </p>
                 </div>
             </div>
@@ -112,7 +113,7 @@ function Tutors() {
         </MotionLink>
       </section>
 
-      <footer className="footer">© 2026 Allen Tutoring</footer>
+      <footer className="footer">© 2026 Inspiration Initiative</footer>
     </div>
   );
 }

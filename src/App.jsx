@@ -30,7 +30,7 @@ function App() {
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6 }} className="logo"
 >
-  Star Student Tutoring
+  Tutoring By Star Students
 </motion.h2>
           <p>
             1-on-1 tutoring for K–7 students in Math, Science, and Coding.
@@ -89,7 +89,7 @@ function App() {
         </section>
 
         <footer className="footer">
-          © 2026 Allen Tutoring
+          © 2026 Inspiration Initiative
         </footer>
       </div>
     </div>
