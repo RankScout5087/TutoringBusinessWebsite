@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 export default function PageLinks() {
   const [stuck, setStuck] = useState(false);
   const [open, setOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -17,38 +18,65 @@ export default function PageLinks() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    const check = () => {
+      const mobile = window.innerWidth <= 768;
+      setIsMobile(mobile);
+
+      if (mobile) setOpen(false);
+    };
+
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
   return (
     <div className={`header ${stuck ? "stuck" : ""}`}>
-      <div className="card">
+      <div className="big-card">
         <header className="nav">
-          
           <h1 className="main_logo">Inspiration Initiative</h1>
 
-          <button
-            className="menu-button"
-            onClick={() => setOpen(!open)}
-          >
-            {open ? <X size={28} /> : <Menu size={28} />}
-          </button>
+          {!isMobile && (
+            <nav className="nav-links desktop">
+              <Link to="/" className="btn-link">Home</Link>
+              <Link to="/services" className="btn-link">Services</Link>
+              <Link to="/booking" className="btn-link">Get Started</Link>
+              <Link to="/tutors" className="btn-link">Our Tutors</Link>
+            </nav>
+          )}
 
-          {/* Animated menu */}
+          {isMobile && (
+            <button
+              className="menu-button"
+              onClick={() => setOpen(prev => !prev)}
+            >
+              {open ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          )}
+        </header>
+
+        {isMobile && (
           <motion.nav
-            className="nav-links"
+            className="nav-links mobile"
             initial={false}
             animate={{
               height: open ? "auto" : 0,
-              opacity: open ? 1 : 0
+              opacity: open ? 1 : 0,
+              scaleY: open ? 1 : 0
             }}
-            transition={{ duration: 0.3 }}
-            style={{ overflow: "hidden" }}
+            transition={{ duration: 0.25 }}
+            style={{
+              overflow: "hidden",
+              transformOrigin: "top"
+            }}
           >
-            <Link to="/" className="btn-link">Home</Link>
-            <Link to="/services" className="btn-link">Services</Link>
-            <Link to="/booking" className="btn-link">Get Started</Link>
-            <Link to="/tutors" className="btn-link">Our Tutors</Link>
+            <Link to="/" className="btn-link" onClick={() => setOpen(false)}>Home</Link>
+            <Link to="/services" className="btn-link" onClick={() => setOpen(false)}>Services</Link>
+            <Link to="/booking" className="btn-link" onClick={() => setOpen(false)}>Get Started</Link>
+            <Link to="/tutors" className="btn-link" onClick={() => setOpen(false)}>Our Tutors</Link>
           </motion.nav>
-
-        </header>
+        )}
       </div>
     </div>
   );
