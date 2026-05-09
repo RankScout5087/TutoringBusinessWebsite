@@ -39,9 +39,9 @@ function Booking() {
       <section className="section">
         <div className="form-card">
           <h3>Student Intake Form</h3>
-          <p className="muted">
+          <u><p className="muted">
             This helps us match the right tutor and prepare the session. You must book a study room below.
-          </p>
+          </p></u>
           <h5>THE ONLY TIMES WE COME ARE 12-5 PM ON WEEKDAYS</h5>
           <iframe
               src="https://cityofallen.libcal.com/spaces"

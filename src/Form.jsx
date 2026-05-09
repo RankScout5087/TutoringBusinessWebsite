@@ -62,9 +62,9 @@ function Form() {
       <section className="section">
         <div className="form-card">
           <h3>Student Intake Form</h3>
-          <p className="muted">
+          <u><p className="muted">
             This helps us match the right tutor and prepare the session. You must book a study room below.
-          </p>
+          </p></u>
           <h5>THE ONLY TIMES WE COME ARE 12-5 PM ON WEEKDAYS</h5>
           
 
@@ -72,8 +72,11 @@ function Form() {
             <input type="text" name = "name" placeholder="FULL Student Name" required/>
             <input type="text" name = "grade" placeholder="Grade Level" required/>
             <input type="text" name = "subject" placeholder="Subject Needed (Math, Science, Coding)" required/>
-            <textarea name = "known" placeholder="What does the student already know?"></textarea>
+            <textarea name = "known" placeholder="How far along is your student and what do they need?"></textarea>
+            <textarea name = "fun" placeholder="What are some personal interests of your student?"></textarea>
             <input type="email" name = "parent_email" placeholder="Parent Email" required/>
+            <input type="tel" name = "parent_email" placeholder="Parent Number(123-456-7890)" required/>
+            <input type="text" name= "extra" placeholder="Is there else anything we should know? (Allergies, conditions, times, schedules, etc)"/>
             <input type="hidden" name="room" value={room || ""} />
             <input type="hidden" name="time" value={time || ""} />
             <input
